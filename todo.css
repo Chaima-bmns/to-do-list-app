@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.Container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/f3b22ef30a165d7f8af80cb91a1f1e11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+.Todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    
+}
+
+
+
+.Todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-left: 37%;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.Todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.Row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: rgb(38, 165, 223);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 16px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.Checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.Checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: solid 0.5px #444444;
+  }
+  
+  .filters span {
+    margin: 5px 15px;
+    padding: 5px 10px;
+    font-size: 17px;
+    color: #444444;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .filters span:first-child {
+    margin-left: 0;
+  }
+  
+  .filters span.active {
+    color: #ffffff;
+    background-color: #3C87FF;
+  }
+  
+  
